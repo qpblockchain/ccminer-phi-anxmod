@@ -2,7 +2,7 @@
  * Blake2-B CUDA Implementation
  *
  * tpruvot@github July 2016
- *
+ * 2018 qpool
  */
 
 #include <miner.h>

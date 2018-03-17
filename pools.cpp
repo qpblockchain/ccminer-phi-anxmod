@@ -1,5 +1,6 @@
 /**
  * Functions which handle multiple pools data
+ * Copyright 2018 qpool
  */
 
 #include <stdio.h>

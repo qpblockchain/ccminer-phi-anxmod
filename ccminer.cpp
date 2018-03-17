@@ -1,12 +1,7 @@
-﻿/*
- * Copyright 2010 Jeff Garzik
+/*
  * Copyright 2012-2014 pooler
  * Copyright 2014-2015 tpruvot
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.  See COPYING for more details.
+ * Copyright 2018 qpool
  */
 
 #include "cpuminer-config.h"
@@ -549,7 +544,7 @@ void calc_network_diff(struct work *work){
 	// sample for diff 43.281 : 1c05ea29
 	// todo: endian reversed on longpoll could be zr5 specific...
 	uint32_t nbits = have_longpoll ? work->data[18] : swab32(work->data[18]);
-	if (opt_algo == ALGO_LBRY) nbits = swab32(work->data[26]);	
+	if (opt_algo == ALGO_LBRY) nbits = swab32(work->data[26]);
 	if (opt_algo == ALGO_DECRED) nbits = work->data[29];
 	if (opt_algo == ALGO_SIA) nbits = work->data[11]; // unsure if correct
 	uint32_t bits = (nbits & 0xffffff);
@@ -3446,7 +3441,7 @@ int main(int argc, char *argv[])
 			CUDART_VERSION/1000, (CUDART_VERSION % 1000)/10);
 		printf("Based on alexis78@github ccminer\n");
 		printf("Originally based on Christian Buchner and Christian H. project\n");
-		printf("Includes some of the work of djm34, sp, tsiv, klausT, tpruvot, pallas and anorganix\n\n");
+		printf("Includes some of the work of djm34, sp, tsiv, klausT, tpruvot, pallas, anorganix and qpool\n\n");
 	}
 
 	rpc_user = strdup("");

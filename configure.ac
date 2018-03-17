@@ -1,4 +1,4 @@
-AC_INIT([ccminer], [alexis-1.0], [], [ccminer], [https://github.com/alexis78/ccminer])
+AC_INIT([ccminer], [qpool-1.2], [], [ccminer], [https://github.com/qpblockchain/ccminer])
 
 AC_PREREQ([2.59c])
 AC_CANONICAL_SYSTEM

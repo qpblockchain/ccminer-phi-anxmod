@@ -12,7 +12,7 @@
  *
  * John E. Stone - john.stone@gmail.com
  * Tanguy Pruvot - tpruvot@github
- *
+ * Copyright 2018 qpool
  */
 
 #include <errno.h>

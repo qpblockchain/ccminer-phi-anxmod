@@ -3,6 +3,7 @@
 * based on the work of https://github.com/ircubic/lib_gpu
 *
 * tpruvot@ccminer.org 06-2016
+* 2018 qpool
 */
 
 #ifdef _WIN32
