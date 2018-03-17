@@ -13,8 +13,7 @@ This variant was tested and built on Linux (ubuntu server 14.04) and VStudio 201
 
 Note that the x86 releases are generally faster than x64 ones on Windows.
 
-About source code dependencies
-------------------------------
+### Source code dependencies
 
 This project requires some libraries to be built :
 
@@ -29,6 +28,24 @@ The tree now contains recent prebuilt openssl and curl .lib for both x86 and x64
 To rebuild them, you need to clone this repository and its submodules :
     git clone https://github.com/peters/curl-for-windows.git compat/curl-for-windows
 
+## Linux compile
+
+
+### Install dependencies for Ubuntu
+
+```bash
+sudo apt-get -y install libssl-dev
+sudo apt-get -y install bc
+sudo apt-get -y install libcurl4-openssl-dev
+sudo apt-get -y install libjansson-dev
+sudo apt-get -y install automake
+```
+### Build script
+
 On Linux, you can use the helper ./build.sh (edit [build.sh](build.sh) it if required)
+
+```bash
+./build.sh
+```
 
 There is also an old [Tutorial for windows](http://cudamining.co.uk/url/tutorials/id/3) on [CudaMining](http://cudamining.co.uk) website.
